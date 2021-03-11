@@ -8,6 +8,7 @@ namespace LordsOfScotland.Core.Models
 {
     public static class Constantes
     {
+        public const byte MAX_PAR_PAGE = 5;
         public enum NomClan: byte
         {
             Inactif, Scott, MakGill, MacDonnell, Wemyss, Fergusson, Forsyth, Cockburn, Cochrane, Bruce

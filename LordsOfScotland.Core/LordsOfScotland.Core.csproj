@@ -49,9 +49,9 @@
     <Compile Include="Models\Joueur.cs" />
     <Compile Include="Models\Salon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IJoueurRepository.cs" />
+    <Compile Include="Repositories\ISalonRepository.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
