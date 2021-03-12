@@ -14,7 +14,8 @@ namespace LordsOfScotland.Core.Models
         public List<byte> Defausse { get; set; }
         public List<byte> Partisans { get; set; }
         public List<byte> Recrues { get; set; }
-        private uint max;
+
+        private static uint max;
 
         public Salon(Joueur j, string nom)
         {
@@ -22,6 +23,10 @@ namespace LordsOfScotland.Core.Models
             Id = max;
             Joueurs = new List<Joueur>();
             Joueurs.Add(j);
+            Pioche = new List<byte>();
+            Defausse = new List<byte>();
+            Partisans = new List<byte>();
+            Recrues = new List<byte>();
             j.Initiative = true;
             if (nom.Equals("") || nom == null)
             {

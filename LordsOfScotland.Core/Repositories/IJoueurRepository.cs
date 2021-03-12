@@ -10,6 +10,7 @@ namespace LordsOfScotland.Core.Repositories
     public interface IJoueurRepository
     {
         Joueur Trouve(uint id);
+        void Cree(Joueur j);
         void Actualise(Joueur j);
         void Supprime(uint id);
     }

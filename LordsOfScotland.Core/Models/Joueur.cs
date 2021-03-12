@@ -13,5 +13,16 @@ namespace LordsOfScotland.Core.Models
         public bool Initiative { get; set; }
         public List<byte> Jeu { get; set; }
         public List<Allie> Armee { get; set; }
+
+        private static uint max;
+
+        public Joueur(string nom)
+        {
+            max++;
+            Id = max;
+            Nom = nom;
+            Jeu = new List<byte>();
+            Armee = new List<Allie>();
+        }
     }
 }

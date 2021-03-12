@@ -9,6 +9,13 @@ namespace LordsOfScotland.Core.Models
     public static class Constantes
     {
         public const byte MAX_PAR_PAGE = 5;
+
+        //messages d'erreur:
+        public const string joueurIntrouvable = "Joueur non trouvé.",
+                            salonIntrouvable = "Salon non trouvé.",
+                            salonPlein = "Salon plein.";
+
+
         public enum NomClan: byte
         {
             Inactif, Scott, MakGill, MacDonnell, Wemyss, Fergusson, Forsyth, Cockburn, Cochrane, Bruce

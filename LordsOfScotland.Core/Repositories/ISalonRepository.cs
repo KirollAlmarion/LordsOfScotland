@@ -11,9 +11,11 @@ namespace LordsOfScotland.Core.Repositories
     {
         List<Salon> ListeSalons(int start, int max, string rechch);
         int Compte(string rechch);
-        void Sauve(Salon salon);
+        void Ouvre(Salon s);
         Salon Trouve(uint id);
-        void Actualise(Salon salon);
-        void Supprime(uint id);
+        void Actualise(Salon s);
+        void Ferme(uint id);
+        void Entre(Joueur j, uint id);
+        void Sort(Joueur j, uint id);
     }
 }
