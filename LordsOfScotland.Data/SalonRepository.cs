@@ -72,7 +72,7 @@ namespace LordsOfScotland.Data
 
         public List<Salon> ListeSalons(int start, byte max, string rechch)
         {
-            IQueryable<Salon> req = (IQueryable<Salon>)salons.OrderBy(s=>s.Nom);
+            IQueryable<Salon> req = salons.OrderBy(s=>s.Nom) as IQueryable<Salon>;
             if (rechch != null && !rechch.Trim().Equals(""))
             {
                 rechch = rechch.Trim().ToLower();

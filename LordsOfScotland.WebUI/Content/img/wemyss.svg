@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" height="660" width="600" version="1.0" id="svg2" sodipodi:version="0.32" inkscape:version="0.45.1" sodipodi:docname="Héraldique_meuble_Cygne passant.svg" sodipodi:docbase="E:\DIVERS\Héraldique" inkscape:export-filename="/Users/olivier/Desktop/Blason Rouge/Blason_Vide_3D.png" inkscape:export-xdpi="144" inkscape:export-ydpi="144" inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <metadata id="metadata49">
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <dc:title>Meuble héraldique : cygne passant</dc:title>
+        <dc:date>19 III 2008</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Zigeuner (http://fr.wikipedia.org/wiki/Utilisateur:Zigeuner)</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/2.5/"/>
+        <dc:language>fr</dc:language>
+        <dc:subject>
+          <rdf:Bag/>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/by-sa/2.5/">
+        <cc:permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+        <cc:permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+        <cc:requires rdf:resource="http://web.resource.org/cc/Notice"/>
+        <cc:requires rdf:resource="http://web.resource.org/cc/Attribution"/>
+        <cc:permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+        <cc:requires rdf:resource="http://web.resource.org/cc/ShareAlike"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview inkscape:window-height="750" inkscape:window-width="1280" inkscape:pageshadow="2" inkscape:pageopacity="0.0" guidetolerance="10.0" gridtolerance="10.0" objecttolerance="10.0" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" id="base" showgrid="false" height="660px" inkscape:zoom="0.44547727" inkscape:cx="396.46229" inkscape:cy="478.04383" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:current-layer="layer4"/>
+  <desc id="desc4">Flag of Canton of Valais (Wallis)</desc>
+  <defs id="defs6">
+    <linearGradient id="linearGradient2893">
+      <stop style="stop-color:white;stop-opacity:0.3137255;" offset="0" id="stop2895"/>
+      <stop id="stop2897" offset="0.19" style="stop-color:white;stop-opacity:0.25098041;"/>
+      <stop style="stop-color:#6b6b6b;stop-opacity:0.1254902;" offset="0.60000002" id="stop2901"/>
+      <stop style="stop-color:black;stop-opacity:0.1254902;" offset="1" id="stop2899"/>
+    </linearGradient>
+    <linearGradient id="linearGradient2885">
+      <stop id="stop2887" offset="0" style="stop-color:white;stop-opacity:1;"/>
+      <stop style="stop-color:white;stop-opacity:1;" offset="0.22857143" id="stop2891"/>
+      <stop id="stop2889" offset="1" style="stop-color:black;stop-opacity:1;"/>
+    </linearGradient>
+    <linearGradient id="linearGradient2955">
+      <stop id="stop2867" offset="0" style="stop-color:#fd0000;stop-opacity:1;"/>
+      <stop style="stop-color:#e77275;stop-opacity:0.65882355;" offset="0.5" id="stop2873"/>
+      <stop style="stop-color:black;stop-opacity:0.32291666;" offset="1" id="stop2959"/>
+    </linearGradient>
+    <radialGradient inkscape:collect="always" xlink:href="#linearGradient2955" id="radialGradient2961" cx="225.52438" cy="218.90099" fx="225.52438" fy="218.90099" r="300" gradientTransform="matrix(-4.167939e-4,2.182867,-1.884232,-3.599562e-4,615.5972,-289.1214)" gradientUnits="userSpaceOnUse"/>
+    <polygon id="star" transform="scale(53,53)" points="0,-1 0.58778525,0.80901699 -0.95105652,-0.30901699 0.95105652,-0.30901699 -0.58778525,0.80901699 0,-1 "/>
+    <clipPath id="clip">
+      <path d="M 0,-200 L 0,600 L 300,600 L 300,-200 L 0,-200 z " id="path10"/>
+    </clipPath>
+    <radialGradient inkscape:collect="always" xlink:href="#linearGradient2955" id="radialGradient1911" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-4.167939e-4,2.182867,-1.884232,-3.599562e-4,615.5972,-289.1214)" cx="225.52438" cy="218.90099" fx="225.52438" fy="218.90099" r="300"/>
+    <radialGradient inkscape:collect="always" xlink:href="#linearGradient2955" id="radialGradient2865" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,1.748721,-1.593162,-1.049767e-7,551.7876,-191.2898)" cx="225.52438" cy="218.90099" fx="225.52438" fy="218.90099" r="300"/>
+    <radialGradient inkscape:collect="always" xlink:href="#linearGradient2955" id="radialGradient2871" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0,1.386237,-1.323286,-5.741131e-8,-158.0823,-109.5408)" cx="225.52438" cy="218.90099" fx="225.52438" fy="218.90099" r="300"/>
+  </defs>
+  <g inkscape:groupmode="layer" id="layer4" inkscape:label="Meubles">
+    <g id="g2237" transform="matrix(2.9492882,0,0,2.9492882,-97.27665,-72.278948)" style="stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+      <path d="M 79.940726,210.7295 C 79.588321,207.20545 83.729076,204.65051 82.671862,203.32899 C 81.571134,201.95308 81.615566,200.95929 84.257683,200.68597 C 86.812616,200.42166 97.74277,203.22573 106.89968,203.329 L 79.940726,210.7295 z " style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="path34582"/>
+      <path d="M 134.89818,184.74366 C 135.55138,188.51797 134.33902,191.6112 131.78333,192.21929 C 129.22764,192.82738 125.36975,195.76051 118.67665,199.68511 C 112.02168,203.58735 114.54136,206.28995 115.24884,208.28304 C 115.98403,210.35418 115.58613,211.37651 113.63538,210.68056 C 111.78998,210.02218 108.71209,208.92997 106.84318,211.04807 C 104.97427,213.16617 92.156218,220.66533 91.627611,227.44912 C 88.595721,226.09865 88.804598,222.19002 87.255074,219.41026 C 85.667944,216.56304 80.068669,209.9081 74.281427,213.02646 C 73.929023,206.85937 90.668465,207.48036 98.873284,204.89504 C 107.05324,202.31755 123.52731,190.42489 126.34655,183.55299 L 134.89818,184.74366 z " style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="path34579"/>
+      <path d="M 120.37916,174.96043 C 121.17207,178.13207 124.07494,183.75462 125.31283,185.70877 L 134.82775,188.88041 C 137.5307,186.85604 139.46932,184.38899 140.90673,181.39181 L 120.37916,174.96043 z " style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="path34577"/>
+      <path d="M 134.56974,235.42681 C 136.50797,231.90271 142.11718,220.24058 138.87007,218.94024 C 135.69873,217.67026 137.14086,216.63969 140.13112,216.14131 C 143.64998,215.55483 161.06074,216.28102 163.17884,216.28102" style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="path34594"/>
+      <path d="M 162.55802,185.9896 C 192.08676,198.69817 214.13987,178.63856 222.86144,165.30701 C 204.13334,167.86819 201.51436,162.64901 193.70648,152.97222 L 166.85632,159.17224" style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="path34565"/>
+      <path d="M 162.93179,188.85525 C 162.93179,188.85525 165.98681,210.01677 166.04664,211.53134 C 166.11963,213.37886 166.47389,214.26418 168.41392,214.89537 C 170.43344,215.55243 174.35977,220.88214 175.05389,223.57419 C 172.84067,221.33257 168.83931,218.15619 167.84256,220.0251 C 166.84581,221.89401 157.25208,235.59931 156.00614,237.09451 C 154.76021,238.58961 154.7086,242.58031 155.061,245.39951 C 150.07094,235.88691 142.9415,228.99191 134.06251,238.18811 C 130.93455,233.02951 147.52079,225.99685 152.25429,221.65519 C 157.03543,217.26983 158.95105,214.34539 158.32808,211.10595 C 157.70511,207.86651 155.51403,188.76715 155.51403,188.76715" style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="path34592"/>
+      <path d="M 165.48696,127.7382 C 159.83963,121.57112 141.22473,106.41374 127.07485,102.71747 C 144.44722,98.647422 153.951,94.864158 165.20387,82.053858 C 176.51839,69.173379 172.55858,40.633789 148.64971,35.593239 C 124.71539,30.547324 105.54275,39.572907 101.66629,40.806323 C 97.789843,42.039739 93.174684,42.477652 85.174113,42.529261 C 77.048948,42.58087 66.877783,48.726573 64.49279,50.664798 C 62.045667,52.653516 59.784721,54.951839 63.663388,57.661283 C 67.625347,60.428912 70.780798,68.908001 76.066868,68.908001 C 81.352938,68.908001 91.827048,68.546742 99.613849,62.4615 C 107.46148,56.32872 123.47686,49.370917 135.39911,49.401151 C 147.3204,49.431382 158.60907,59.050898 149.83518,69.694651 C 141.1223,80.264396 119.87104,83.26223 95.136434,87.165244 C 70.420713,91.065278 51.281993,110.30873 69.573316,139.58374 C 87.82957,168.80262 113.06292,174.60588 144.74669,184.17456 C 148.43981,187.83745 151.50997,191.00196 155.70147,193.91729 L 163.37253,193.63787 C 168.57676,189.1296 170.06822,184.82775 170.24442,182.53712" style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="path33594"/>
+      <path d="M 103.46374,103.06988 C 49.369622,97.960008 95.26298,180.92194 213.59019,157.16399 C 199.76565,143.80198 163.13759,122.922 136.58978,119.28049" style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="path34569"/>
+      <path d="M 190.24338,140.60097 C 181.78567,142.01058 161.0819,141.83439 139.76142,137.60553" style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="path34571"/>
+      <path d="M 204.69198,150.02779 C 188.83377,153.19944 170.06822,153.46374 148.74774,150.1159" style="fill:none;fill-opacity:0.75;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="path34573"/>
+      <path d="M 76.502947,69.032595 C 80.051002,68.908001 79.943036,63.613458 79.976315,60.380103 C 80.009607,57.145507 79.951761,56.349635 80.561767,55.330105 C 81.794743,57.674609 84.93695,57.580807 86.098739,56.464985 C 87.229869,55.378609 86.996735,54.048978 86.551654,53.271586 C 86.106573,52.494193 85.136279,52.320435 85.111338,52.060805 C 85.051,51.432718 85.654871,51.537374 87.149303,50.603483 C 82.102559,50.790938 78.06764,53.909689 76.436061,53.541272 C 74.790031,53.169593 65.486281,49.676312 63.807524,51.412361 C 62.097371,53.180878 59.784721,54.951839 63.663388,57.661283 C 67.625347,60.428912 72.956531,69.157131 76.502947,69.032595 z " style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="path35572"/>
+      <path d="M 76.372959,61.146549 C 79.565977,65.173713 78.581749,68.746774 75.093121,69.120556 C 71.604493,69.494338 51.544882,70.366495 50.797318,70.366495 C 50.049755,70.366495 48.955635,68.058298 50.672725,67.62543" style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="path34599"/>
+      <path d="M 66.827172,56.098664 C 65.343963,57.301564 61.603085,61.556823 56.65323,62.641675 C 51.787403,63.708111 47.661095,65.200277 46.913532,66.321622 C 46.165969,67.442966 45.710347,69.017339 48.451412,68.768151 C 51.192477,68.518963 51.544882,67.00246 55.905667,67.127054 C 60.266452,67.251648 76.5429,64.53196 77.788839,63.90899 C 79.034778,63.286021 75.594649,59.784964 74.479007,58.955468 C 73.404051,58.156224 72.25146,57.338022 70.279307,59.217178 C 68.352829,61.052813 66.421183,60.226004 69.239803,57.810153 C 72.109542,55.350487 68.35253,54.86158 66.827172,56.098664 z " style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" id="path34601"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+﻿section {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section > img {
+    border: .5em ridge sienna;
+}

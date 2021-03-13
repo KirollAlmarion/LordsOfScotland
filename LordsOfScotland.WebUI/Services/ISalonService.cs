@@ -5,12 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LordsOfScotland.Core.Repositories
+namespace LordsOfScotland.WebUI.Services
 {
-    public interface ISalonRepository
+    public interface ISalonService
     {
-        List<Salon> ListeSalons(int start, byte max, string rechch);
-        int Compte(string rechch);
+        List<Salon> ListeSalons(int start, byte maxParPage, string rechch);
+        bool ExisteSuivant(int page, byte maxParPage, string rechch);
         void Ouvre(Salon s);
         Salon Trouve(uint id);
         void Actualise(Salon s);

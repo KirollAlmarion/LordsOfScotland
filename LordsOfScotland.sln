@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LordsOfScotland.Core", "Lor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LordsOfScotland.Data", "LordsOfScotland.Data\LordsOfScotland.Data.csproj", "{940F71BD-B4B2-4CC1-86E8-D2CF6421965E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LordsOfScotland.WebUI", "LordsOfScotland.WebUI\LordsOfScotland.WebUI.csproj", "{5263D915-3D52-4B09-BCA8-28F2F3337B51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LordsOfScotland.WebUI.Tests", "LordsOfScotland.WebUI.Tests\LordsOfScotland.WebUI.Tests.csproj", "{E3EA7CBD-F644-47AF-AD5D-8C911FBD07FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{940F71BD-B4B2-4CC1-86E8-D2CF6421965E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{940F71BD-B4B2-4CC1-86E8-D2CF6421965E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{940F71BD-B4B2-4CC1-86E8-D2CF6421965E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5263D915-3D52-4B09-BCA8-28F2F3337B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5263D915-3D52-4B09-BCA8-28F2F3337B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5263D915-3D52-4B09-BCA8-28F2F3337B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5263D915-3D52-4B09-BCA8-28F2F3337B51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3EA7CBD-F644-47AF-AD5D-8C911FBD07FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3EA7CBD-F644-47AF-AD5D-8C911FBD07FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3EA7CBD-F644-47AF-AD5D-8C911FBD07FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3EA7CBD-F644-47AF-AD5D-8C911FBD07FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
