@@ -26,28 +26,20 @@ namespace LordsOfScotland.WebUI.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index([Bind(Include = "Nom")] Joueur nouveau)
+        [ValidateAntiForgeryToken]
+        public ActionResult Index(string nom)
         {
-            if (ModelState.IsValid)
+            if (nom != "")
             {
+                Joueur nouveau = new Joueur(nom);
                 joueurService.Cree(nouveau);
                 Session["joueur"] = nouveau;
-                return RedirectToAction("AfficheSalons");
+                return RedirectToAction("Index", "Salons");
             }
             else
             {
-                return View(nouveau);
+                return View(nom);
             }
-        }
-
-        public ActionResult AfficheSalons(int page = 1, byte maxParPage = Constantes.MAX_PAR_PAGE, string searchField = "")
-        {
-            var salons = salonService.ListeSalons(page, maxParPage, searchField);
-            ViewBag.Page = page;
-            ViewBag.maxByPage = maxParPage;
-            ViewBag.searchField = searchField;
-            ViewBag.NextExist = salonService.ExisteSuivant(page, maxParPage, searchField);
-            return View("Index", salons);
         }
 
         public ActionResult About()

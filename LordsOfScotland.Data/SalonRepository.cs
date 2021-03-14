@@ -13,6 +13,7 @@ namespace LordsOfScotland.Data
     {
         ObjectCache cache = MemoryCache.Default;
         List<Salon> salons;
+        private JoueurRepository joueurRepository;
 
         public SalonRepository()
         {
@@ -21,6 +22,7 @@ namespace LordsOfScotland.Data
             {
                 salons = new List<Salon>();
             }
+            joueurRepository = new JoueurRepository();
         }
 
         public void Actualise(Salon s)
@@ -39,7 +41,8 @@ namespace LordsOfScotland.Data
 
         public int Compte(string rechch)
         {
-            IQueryable<Salon> req = (IQueryable<Salon>)salons;
+            IQueryable<Salon> req = salons.AsQueryable();
+            req = req.OrderBy(s => s.Nom);
             if (rechch != null && !rechch.Trim().Equals(""))
             {
                 rechch = rechch.Trim().ToLower();
@@ -72,14 +75,22 @@ namespace LordsOfScotland.Data
 
         public List<Salon> ListeSalons(int start, byte max, string rechch)
         {
-            IQueryable<Salon> req = salons.OrderBy(s=>s.Nom) as IQueryable<Salon>;
-            if (rechch != null && !rechch.Trim().Equals(""))
+            IQueryable<Salon> req = salons.OrderBy(s=>s.Nom).AsQueryable();
+            if (req != null)
             {
-                rechch = rechch.Trim().ToLower();
-                req = req.Where(s => s.Nom.ToLower().Contains(rechch));
+                if (rechch != null && !rechch.Trim().Equals(""))
+                {
+                    rechch = rechch.Trim().ToLower();
+                    req = req.Where(s => s.Nom.ToLower().Contains(rechch));
+                }
+                req = req.Skip(start).Take(max);
+                return req.ToList();
             }
-            req = req.Skip(start).Take(max);
-            return req.ToList();
+            else
+            {
+                return null;
+            }
+            
         }
 
         public void Ouvre(Salon salon)
@@ -100,7 +111,15 @@ namespace LordsOfScotland.Data
                 Salon salon = Trouve(id);
                 salon.Joueurs.Remove(j);
                 SaveChanges();
-                if (salon.Joueurs.Count == 0)
+                if (salon.Joueurs.Count != 0)
+                {
+                    if (j.Initiative)
+                    {
+                        salon.Joueurs[0].Initiative = true;
+                        joueurRepository.Actualise(salon.Joueurs[0]);
+                    }
+                }
+                else
                 {
                     Ferme(id);
                 }

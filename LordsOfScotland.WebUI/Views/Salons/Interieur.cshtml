@@ -1,0 +1,22 @@
+﻿@model LordsOfScotland.Core.Models.Salon
+
+@{
+    ViewBag.Title = "Interieur";
+}
+
+
+<article>
+    <div>
+        <h2>@Model.Nom</h2>
+        <ul>
+            @foreach (var joueur in Model.Joueurs)
+            {
+                <li>@joueur.Nom</li>
+            }
+        </ul>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</article>

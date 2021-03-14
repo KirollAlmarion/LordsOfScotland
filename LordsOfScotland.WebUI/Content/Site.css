@@ -15,7 +15,11 @@ h1 {
     font-family: Harrington, cursive;
 }
 
-
+h2 {
+    text-align: center;
+    padding: .5em;
+    margin: 1em;
+}
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
@@ -34,5 +38,17 @@ h1 {
 input,
 select,
 textarea {
-    max-width: 280px;
+    max-width: 75%;
+}
+
+label{
+    font-weight: bold;
+}
+
+input[type=submit]{
+    display: block;
+    margin: 1em auto;
+    padding: .5em;
+    font-weight: bold;
+    border-radius: .5em;
 }

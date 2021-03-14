@@ -30,10 +30,13 @@ namespace LordsOfScotland.Data
 
         public void Actualise(Joueur j)
         {
-            Joueur joueurActu = joueurs.Find(joueur => joueur.Id == j.Id);
-            if (joueurActu != null)
+            int index = joueurs.IndexOf(joueurs.Find(joueur => joueur.Id == j.Id));
+
+            if (index > -1)
             {
-                joueurActu = j;
+
+                joueurs.RemoveAt(index);
+                joueurs.Insert(index,j);
                 SaveChanges();
             }
             else

@@ -1,0 +1,52 @@
+﻿@model IEnumerable<LordsOfScotland.Core.Models.Salon>
+
+@{
+    ViewBag.Title = "AfficheSalons";
+}
+
+<article>
+    <h2>Salons existants</h2>
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nom)
+            </th>
+            <th></th>
+        </tr>
+        @if (Model != null)
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nom)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+        }
+
+    </table>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <h2>Entrez le nom du nouveau salon</h2>
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        @Html.Label("nom", "Nom: ")
+        @Html.TextBox("nom", "Salon de MacLeod", new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessage("nom", "", new { @class = "text-danger" })
+
+        <input type="submit" value="Créer salon" />
+    }
+</article>
