@@ -52,3 +52,9 @@ input[type=submit]{
     font-weight: bold;
     border-radius: .5em;
 }
+
+.erreur{
+    border 1px solid white;
+    color: white;
+    background-color: red;
+}

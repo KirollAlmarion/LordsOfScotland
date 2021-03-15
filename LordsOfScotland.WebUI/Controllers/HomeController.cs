@@ -22,6 +22,7 @@ namespace LordsOfScotland.WebUI.Controllers
 
         public ActionResult Index()
         {
+            if (Session["joueur"] != null) return RedirectToAction("Index", "Salons");
             return View();
         }
 

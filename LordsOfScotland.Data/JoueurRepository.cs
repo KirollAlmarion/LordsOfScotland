@@ -41,7 +41,7 @@ namespace LordsOfScotland.Data
             }
             else
             {
-                throw new Exception(Constantes.joueurIntrouvable);
+                throw new Exception(Constantes.MSG_ERREUR[(int)Constantes.Erreurs.joueurIntrouvable]);
             }
         }
 
@@ -55,7 +55,7 @@ namespace LordsOfScotland.Data
             }
             else
             {
-                throw new Exception(Constantes.joueurIntrouvable);
+                throw new Exception(Constantes.MSG_ERREUR[(int)Constantes.Erreurs.joueurIntrouvable]);
             }
         }
 
@@ -68,7 +68,7 @@ namespace LordsOfScotland.Data
             }
             else
             {
-                throw new Exception(Constantes.joueurIntrouvable);
+                throw new Exception(Constantes.MSG_ERREUR[(int)Constantes.Erreurs.joueurIntrouvable]);
             }
         }
 

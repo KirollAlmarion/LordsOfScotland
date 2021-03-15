@@ -35,7 +35,7 @@ namespace LordsOfScotland.Data
             }
             else
             {
-                throw new Exception(Constantes.salonIntrouvable);
+                throw new Exception(Constantes.MSG_ERREUR[(int)Constantes.Erreurs.salonIntrouvable]);
             }
         }
 
@@ -63,7 +63,7 @@ namespace LordsOfScotland.Data
                 }
                 else
                 {
-                    throw new Exception(Constantes.salonPlein);
+                    throw new Exception(Constantes.MSG_ERREUR[(int)Constantes.Erreurs.salonPlein]);
                 }
             }
             catch (Exception ex)
@@ -141,7 +141,7 @@ namespace LordsOfScotland.Data
             }
             else
             {
-                throw new Exception(Constantes.salonIntrouvable);
+                throw new Exception(Constantes.MSG_ERREUR[(int)Constantes.Erreurs.salonIntrouvable]);
             }
         }
 
@@ -154,7 +154,7 @@ namespace LordsOfScotland.Data
             }
             else
             {
-                throw new Exception(Constantes.salonIntrouvable);
+                throw new Exception(Constantes.MSG_ERREUR[(int)Constantes.Erreurs.salonIntrouvable]);
             }
         }
     }
