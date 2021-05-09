@@ -35,6 +35,9 @@ namespace LordsOfScotland.WebUI.Controllers
                 Joueur nouveau = new Joueur(nom);
                 joueurService.Cree(nouveau);
                 Session["joueur"] = nouveau;
+                //HttpCookie c = new HttpCookie(nouveau.Id.ToString());
+                //c.Value = nouveau.Id.ToString();
+                //HttpContext.Response.Cookies.Add(c);
                 return RedirectToAction("Index", "Salons");
             }
             else

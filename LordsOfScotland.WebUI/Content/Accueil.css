@@ -5,6 +5,11 @@
     align-items: center;
 }
 
-section > img {
-    border: .5em ridge sienna;
-}
+    section > * {
+        border: .5em ridge sienna;
+        background-image: linear-gradient(burlywood, linen, burlywood);
+    }
+
+    section >*:nth-child(even){
+        padding: 1em;
+    }

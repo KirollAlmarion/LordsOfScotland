@@ -10,6 +10,11 @@ namespace LordsOfScotland.Core.Models
     {
         public const byte MAX_PAR_PAGE = 5;
 
+        public enum ActionsJoueur: byte
+        {
+            RENOMMER, ENTRER, SORTIR
+        }
+
         //messages d'erreur:
         public enum Erreurs: byte
         {

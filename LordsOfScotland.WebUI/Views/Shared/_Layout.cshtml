@@ -14,6 +14,7 @@
 <body>
     <main>
         <h1>Lords of Scotland</h1>
+        <p id="bienvenue"></p>
         @{
             
             Joueur j = (Joueur)Session["joueur"];            
@@ -22,6 +23,11 @@
                 <p>j.Nom</p>
             }
         }
+
+        <form>
+            <input type="text" id="nom" name="nom" />
+            <input type="submit" id="btnNom" value="Renommer" />
+        </form>
 
         <section>
             <img src="../Content/img/matthieu.jpg" alt="Indigène bourru" />
