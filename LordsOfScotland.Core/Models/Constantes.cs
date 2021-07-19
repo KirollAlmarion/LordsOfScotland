@@ -23,7 +23,7 @@ namespace LordsOfScotland.Core.Models
 
         public static string[] MSG_ERREUR =
         {
-            "Joueur non trouvé.",
+            "Joueur non trouvé: ",
             "Salon non trouvé.",
             "Salon plein."
         };

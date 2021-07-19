@@ -16,8 +16,8 @@
         <h1>Lords of Scotland</h1>
         <p id="bienvenue"></p>
         @{
-            
-            Joueur j = (Joueur)Session["joueur"];            
+
+            Joueur j = (Joueur)Session["joueur"];
             if (j != null)
             {
                 <p>j.Nom</p>
@@ -39,6 +39,7 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/prise-reseau.js")
     @RenderSection("scripts", required: false)
 </body>
 </html>

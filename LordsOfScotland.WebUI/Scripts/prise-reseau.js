@@ -20,14 +20,27 @@ if (!window.WebSocket && window.MozWebSocket) {
 
 var connection;
 
-var host = "ws://" + window.location.host + "/Services/GetionnaireHttp.ashx";
+var host = "ws://" + window.location.host + "/Services/GestionnaireHttp.ashx";
 
-connection = new WebSocket(host);
+try {
+    connection = new WebSocket(host);
+}
+catch (exception) {
+    console.error(exception);
+}
+
+
+connection.onerror = function (error) {
+    console.error(error);
+};
 
 //connection.onopen = function () {
 //    $(".btn").css("color", "green");
 //}
 
+connection.onopen = function () {
+    fetch("/Salons/Index");
+}
 
 btnNom.onclick = () => {
     let requete = {

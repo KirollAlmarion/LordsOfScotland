@@ -16,6 +16,13 @@ namespace LordsOfScotland.Core.Models
 
         private static uint max;
 
+        public static uint NbJoueurs {
+            get
+            {
+                return max;
+            }
+        }
+
         public Joueur(string nom)
         {
             max++;

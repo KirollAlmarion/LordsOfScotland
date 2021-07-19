@@ -12,7 +12,7 @@ using System.Web.SessionState;
 
 namespace LordsOfScotland.WebUI.Models
 {
-    public class GestionnaireWebSocket: WebSocketHandler
+    public class GestionnaireWebSocket: WebSocketHandler, IRequiresSessionState
     {
         private IJoueurService joueurService;
         private ISalonService salonService;
@@ -28,13 +28,12 @@ namespace LordsOfScotland.WebUI.Models
             string nom = this.WebSocketContext.LogonUserIdentity.Name;
             Joueur nouveau = new Joueur(nom);
             joueurService.Cree(nouveau);
-            this.WebSocketContext.Items.Add("Id", nouveau.Id.ToString());
-            //Session["joueur"] = nouveau;
-            var certif = this.WebSocketContext.ClientCertificate;
-            certif.Add("Id", nouveau.Id.ToString());
+            //this.WebSocketContext.Items.Add("Id", nouveau.Id.ToString());
+            //var certif = this.WebSocketContext.ClientCertificate;
+            //certif.Add("Id", nouveau.Id.ToString());
             
 
-            base.Send(JsonConvert.SerializeObject("Utilisateur " + nom + " n°" + certif.Get(0) + " connecté!"));
+            base.Send(JsonConvert.SerializeObject("Utilisateur " + nom + " n°" + this.WebSocketContext.Items["Id"] + " connecté!"));
 
             while (true)
             {

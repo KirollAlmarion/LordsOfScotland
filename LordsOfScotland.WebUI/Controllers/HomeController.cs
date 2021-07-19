@@ -9,6 +9,7 @@ using System.Web.Mvc;
 
 namespace LordsOfScotland.WebUI.Controllers
 {
+    [HandleError]
     public class HomeController : Controller
     {
         private IJoueurService joueurService;
@@ -22,7 +23,12 @@ namespace LordsOfScotland.WebUI.Controllers
 
         public ActionResult Index()
         {
-            if (Session["joueur"] != null) return RedirectToAction("Index", "Salons");
+            Session["test"] = "essai";
+            if (Session["joueur"] == null && Session["Id"] != null)
+            {
+                Session["joueur"] = joueurService.Trouve(Convert.ToUInt32(Session["Id"]));
+            }
+            //if (Session["joueur"] != null) return RedirectToAction("Index", "Salons");
             return View();
         }
 

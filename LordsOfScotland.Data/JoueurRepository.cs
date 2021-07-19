@@ -42,7 +42,7 @@ namespace LordsOfScotland.Data
             }
             else
             {
-                throw new Exception(Constantes.MSG_ERREUR[(int)Constantes.Erreurs.joueurIntrouvable]);
+                throw new Exception(Constantes.MSG_ERREUR[(int)Constantes.Erreurs.joueurIntrouvable]+j.Id);
             }
         }
 
@@ -56,7 +56,7 @@ namespace LordsOfScotland.Data
             }
             else
             {
-                throw new Exception(Constantes.MSG_ERREUR[(int)Constantes.Erreurs.joueurIntrouvable]);
+                throw new Exception(Constantes.MSG_ERREUR[(int)Constantes.Erreurs.joueurIntrouvable]+id);
             }
         }
 
@@ -69,7 +69,7 @@ namespace LordsOfScotland.Data
             }
             else
             {
-                throw new Exception(Constantes.MSG_ERREUR[(int)Constantes.Erreurs.joueurIntrouvable]);
+                throw new Exception(Constantes.MSG_ERREUR[(int)Constantes.Erreurs.joueurIntrouvable]+id);
             }
         }
 

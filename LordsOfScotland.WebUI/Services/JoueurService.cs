@@ -33,7 +33,16 @@ namespace LordsOfScotland.WebUI.Services
 
         public Joueur Trouve(uint id)
         {
-            return joueurRepository.Trouve(id);
+            try
+            {
+                return joueurRepository.Trouve(id);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            
         }
     }
 }

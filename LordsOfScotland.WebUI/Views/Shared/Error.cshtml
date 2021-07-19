@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width" />
     <title>Erreur</title>
 </head>
+@{ 
+    Exception ex = HttpContext.Current.Error;
+}
 <body>
     <hgroup>
         <h1>Erreur.</h1>
         <h2>Une erreur s'est produite lors du traitement de votre demande.</h2>
+        <p>@ex.Message</p>
     </hgroup>
 </body>
 </html>

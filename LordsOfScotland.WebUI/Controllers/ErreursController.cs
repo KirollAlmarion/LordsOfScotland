@@ -10,9 +10,10 @@ namespace LordsOfScotland.WebUI.Controllers
     public class ErreursController : Controller
     {
         // GET: Erreurs
-        public ActionResult Index(byte errnum)
+        public ActionResult Index(string msg)
         {
-            ViewBag.Erreur = Constantes.MSG_ERREUR[errnum];
+            //ViewBag.Erreur = Constantes.MSG_ERREUR[errnum];
+            ViewBag.Erreur = msg;
             return View();
         }
     }
