@@ -36,18 +36,18 @@ namespace LordsOfScotland.WebUI.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Index(string nom)
+        public ActionResult Index(string nomSalon)
         {
-            if (nom != "")
+            if (nomSalon != "")
             {
-                Salon nouveau = new Salon((Joueur)Session["joueur"], nom);
+                Salon nouveau = new Salon((Joueur)Session["joueur"], nomSalon);
                 salonService.Ouvre(nouveau);
                 Session["salon"] = nouveau;
                 return RedirectToAction("Interieur");
             }
             else
             {
-                return View(nom);
+                return View(nomSalon);
             }
         }
 

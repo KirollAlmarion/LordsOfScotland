@@ -28,7 +28,7 @@ namespace LordsOfScotland.Core.Models
             Partisans = new List<byte>();
             Recrues = new List<byte>();
             j.Initiative = true;
-            if (nom.Equals("") || nom == null)
+            if (string.IsNullOrEmpty(nom))
             {
                 Nom = "Salon de " + j.Nom;
             }

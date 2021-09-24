@@ -18,26 +18,14 @@ namespace LordsOfScotland.WebUI.Services
     public class GestionnaireHttp : IHttpHandler, IRequiresSessionState
     {
         private IJoueurService joueurService;
+        private ISalonService salonService;
+
         public void ProcessRequest(HttpContext context)
         {
             if (context.IsWebSocketRequest)
             {
+                context.Items.Add("Id", context.Session["Id"].ToString());
                 context.AcceptWebSocketRequest(new GestionnaireWebSocket());
-                if (context.Items["Id"]==null || Convert.ToUInt32(context.Items["Id"]) < 1)
-                {
-                    context.Items.Add("Id", Joueur.NbJoueurs+1);
-                }
-                context.Session["Id"] = context.Items["Id"];
-                //try
-                //{
-                //    Joueur joueurCourant = joueurService.Trouve(Convert.ToUInt32(context.Items["Id"]));
-                //    context.Session["joueur"] = joueurCourant;
-                //}
-                //catch (Exception ex)
-                //{
-
-                //    //throw;
-                //}
 
             }
             //context.Response.ContentType = "text/plain";
@@ -56,6 +44,7 @@ namespace LordsOfScotland.WebUI.Services
         public GestionnaireHttp()
         {
             joueurService = new JoueurService(new JoueurRepository());
+            salonService = new SalonService(new SalonRepository());
         }
     }
 }

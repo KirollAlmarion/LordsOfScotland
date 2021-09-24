@@ -28,7 +28,7 @@ namespace LordsOfScotland.WebUI.Controllers
             {
                 Session["joueur"] = joueurService.Trouve(Convert.ToUInt32(Session["Id"]));
             }
-            //if (Session["joueur"] != null) return RedirectToAction("Index", "Salons");
+            if (Session["joueur"] != null) return RedirectToAction("Index", "Salons");
             return View();
         }
 
@@ -36,11 +36,23 @@ namespace LordsOfScotland.WebUI.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Index(string nom)
         {
-            if (nom != "")
+            if (Session["Id"] != null)
+            {
+                Joueur joueurCourant = (Joueur)Session["joueur"];
+                joueurCourant.Nom = nom;
+                joueurService.Actualise(joueurCourant);
+                if (Session["salon"] != null)
+                {
+                    return RedirectToAction("Interieur", "Salons");
+                }
+                else return RedirectToAction("Index", "Salons");
+            }
+            else if (nom != "")
             {
                 Joueur nouveau = new Joueur(nom);
                 joueurService.Cree(nouveau);
                 Session["joueur"] = nouveau;
+                Session["Id"] = nouveau.Id;
                 //HttpCookie c = new HttpCookie(nouveau.Id.ToString());
                 //c.Value = nouveau.Id.ToString();
                 //HttpContext.Response.Cookies.Add(c);

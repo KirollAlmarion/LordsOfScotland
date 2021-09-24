@@ -14,24 +14,30 @@
 <body>
     <main>
         <h1>Lords of Scotland</h1>
-        <p id="bienvenue"></p>
-        @{
-
-            Joueur j = (Joueur)Session["joueur"];
-            if (j != null)
-            {
-                <p>j.Nom</p>
-            }
-        }
-
-        <form>
-            <input type="text" id="nom" name="nom" />
-            <input type="submit" id="btnNom" value="Renommer" />
-        </form>
+        
 
         <section>
             <img src="../Content/img/matthieu.jpg" alt="Indigène bourru" />
-            @RenderBody()
+
+            <div>
+                <p id="bienvenue"></p>
+                @{
+
+                    Joueur j = (Joueur)Session["joueur"];
+                    if (j != null)
+                    {
+                        using (Html.BeginForm("Index", "Home"))
+                        {
+                                @Html.AntiForgeryToken()
+                                @Html.TextBox("nom", @j.Nom, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessage("nom", "", new { @class = "text-danger" })
+                                <input type="submit" value="Renommer" />
+                            }
+                    }
+                }
+
+                @RenderBody()
+            </div>            
 
             <img src="../Content/img/boite.jpg" alt="Boîte du jeu" />
         </section>

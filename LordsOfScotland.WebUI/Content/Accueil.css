@@ -5,11 +5,20 @@
     align-items: center;
 }
 
-    section > * {
+section > div{
+    height: 66vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+    section > div > * {
         border: .5em ridge sienna;
+        padding: 1em;
         background-image: linear-gradient(burlywood, linen, burlywood);
     }
 
-    section >*:nth-child(even){
-        padding: 1em;
+    section >*:first-child, section >*:last-child{
+        border: .5em ridge sienna;
     }

@@ -7,8 +7,8 @@ const RENOMMER_JOUEUR = 0,
 let partieEnCours = false;
 
 let messageBienvenue = document.getElementById('bienvenue');
-let champNom = document.getElementById('nom');
 let btnNom = document.getElementById('btnNom');
+let btnCree = document.getElementById('btnCree');
 
 if (Modernizr.websockets) {
     messageBienvenue.textContent = "Fàilte gu Alba";
@@ -18,35 +18,29 @@ if (!window.WebSocket && window.MozWebSocket) {
     window.WebSocket = window.MozWebSocket;
 }
 
-var connection;
+btnCree.onclick = () => {
+    var connection;
 
-var host = "ws://" + window.location.host + "/Services/GestionnaireHttp.ashx";
+    var host = "ws://" + window.location.host + "/Services/GestionnaireHttp.ashx";
 
-try {
-    connection = new WebSocket(host);
-}
-catch (exception) {
-    console.error(exception);
-}
-
-
-connection.onerror = function (error) {
-    console.error(error);
-};
-
-//connection.onopen = function () {
-//    $(".btn").css("color", "green");
-//}
-
-connection.onopen = function () {
-    fetch("/Salons/Index");
-}
-
-btnNom.onclick = () => {
-    let requete = {
-        enJeu: partieEnCours,
-        action: RENOMMER_JOUEUR,
-        nom: champNom.value
+    try {
+        connection = new WebSocket(host);
     }
-    connection.send(JSON.stringify(requete));
+    catch (exception) {
+        console.error(exception);
+    }
+
+    connection.onerror = function (error) {
+        console.error(error);
+    };
+
+    connection.onopen = function () {
+        //fetch("/Salons/Index");
+    }
+
+    connection.onmessage = function (message) {
+        var data = window.JSON.parse(message.data);
+        btnNom.value = data;
+    };
+
 }

@@ -29,7 +29,10 @@ namespace LordsOfScotland.WebUI
         protected void Session_End(object sender, EventArgs e)
         {
             Joueur joueurCourant = (Joueur)Session["joueur"];
-            joueurService.Supprime(joueurCourant.Id);
+            if (joueurCourant != null)
+            {
+                joueurService.Supprime(joueurCourant.Id);
+            }            
         }
     }
 }

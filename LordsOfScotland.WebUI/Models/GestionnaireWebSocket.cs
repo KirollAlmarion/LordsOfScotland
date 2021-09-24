@@ -12,10 +12,11 @@ using System.Web.SessionState;
 
 namespace LordsOfScotland.WebUI.Models
 {
-    public class GestionnaireWebSocket: WebSocketHandler, IRequiresSessionState
+    public class GestionnaireWebSocket: WebSocketHandler
     {
         private IJoueurService joueurService;
         private ISalonService salonService;
+        private static WebSocketCollection toutesLesConnexions = new WebSocketCollection();
 
         public GestionnaireWebSocket()
         {
@@ -25,15 +26,12 @@ namespace LordsOfScotland.WebUI.Models
 
         public override void OnOpen()
         {
-            string nom = this.WebSocketContext.LogonUserIdentity.Name;
-            Joueur nouveau = new Joueur(nom);
-            joueurService.Cree(nouveau);
-            //this.WebSocketContext.Items.Add("Id", nouveau.Id.ToString());
-            //var certif = this.WebSocketContext.ClientCertificate;
-            //certif.Add("Id", nouveau.Id.ToString());
-            
-
-            base.Send(JsonConvert.SerializeObject("Utilisateur " + nom + " n°" + this.WebSocketContext.Items["Id"] + " connecté!"));
+            toutesLesConnexions.Add(this);
+            //string nom = this.WebSocketContext.LogonUserIdentity.Name;
+            //Joueur joueurCourant = joueurService.Trouve(Convert.ToUInt32(this.WebSocketContext.Items["Id"]));
+            //joueurCourant.Nom = nom;
+            //joueurService.Actualise(joueurCourant);
+            //base.Send(JsonConvert.SerializeObject("Utilisateur " + nom + " n°" + this.WebSocketContext.Items["Id"] + " connecté!"));
 
             while (true)
             {
@@ -44,8 +42,7 @@ namespace LordsOfScotland.WebUI.Models
 
         public override void OnClose()
         {
-            var certif = this.WebSocketContext.ClientCertificate;
-            uint id = Convert.ToUInt32(certif.Get(0));
+            uint id = Convert.ToUInt32(this.WebSocketContext.Items["Id"]);
             joueurService.Supprime(id);
             base.OnClose();
         }
